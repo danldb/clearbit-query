@@ -33,7 +33,8 @@ class ClearbitCSV
   attr_reader :source
   private :source
 
-  def self.generate(source:,target:)
+  def self.generate(source:,target:,rate_limit: nil)
+    @rate_limit = rate_limit || RATE_LIMIT
     new(source).generate(target)
   end
 

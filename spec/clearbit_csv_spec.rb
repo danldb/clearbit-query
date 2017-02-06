@@ -2,17 +2,7 @@ require 'clearbit_csv'
 require 'csv'
 
 describe 'csv' do
-  let(:array_of_hashes) do 
-    [
-      {
-        "supplier"=>"Accenture (UK) Limited",
-        "digital outcomes"=>"yes",
-        "digital specialists"=>"yes",
-        "user research studios"=>nil,
-        "user research participants"=>nil
-      }
-    ] 
-  end
+  let(:array_of_hashes){ [{"supplier"=>"Accenture (UK) Limited"}] } 
 
   describe CSV do
 

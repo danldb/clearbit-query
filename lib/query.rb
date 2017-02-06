@@ -24,7 +24,11 @@ class Query
   EXTRANEOUS_TERMS = [" ltd", " Plc", " PLC", " plc", " Ltd", " (LLP)", " UK Plc", " UK Ltd", " Limited", " UK LImited", " Limited (UK)", " (UK) Limited", /\([^\]]*\)/ ].freeze
 
   def sanitize(string)
-    EXTRANEOUS_TERMS.each{ |term| string.gsub!(term, "") }
+    EXTRANEOUS_TERMS.each do |term| 
+      string.gsub!(term, "")
+      string.upcase.gsub!(term, "")
+      string.downcase.gsub!(term, "")
+    end
     string
   end
 
