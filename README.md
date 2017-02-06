@@ -1,8 +1,8 @@
 #ClearBit Query
 
-Takes a CSV full of supplier names and attempts to get the logo and domain from clearbit. If multiple companies exist in clearbits database, it will take the domain and logo of the biggest company in terms of employee numbers. Has a very ugly sleep function included to slow down the requests and avoid rate limiting, but the advantage of is that you don't need a clearbit account key.
+Takes a CSV full of supplier names and attempts to get the logo and domain from clearbit. If multiple companies exist in clearbits database, it will take the domain and logo of the biggest company in terms of employee numbers. Has a very ugly sleep function included to slow down the requests and avoid rate limiting, but the advantage of that is that you don't need a clearbit account key.
 
-Meant to be a one-off use, so probably not for use by anyone else ever. If you do decide to suse this, remember that this is a very imperfect program calling an API that is covered in warnings about its accuracy. Do not make life or death decisions based on this data unless you like accidental death. You have been warned. 
+Meant to be a one-off use, so probably not for use by anyone else ever. If you do decide to use this, remember that this is a very imperfect program calling an API that is covered in warnings about its own accuracy. Do not make life or death decisions based on this data unless you like accidental death. You have been warned. 
 
 Usage:
 
